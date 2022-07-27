@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xxl-4 text-center">
+            <h1 class="h1-Title mt-5">Cálculo Horas Trabalhadas</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row mt-3" >
+
+        <div class="col-xs-6 col-sm-3">
+            <label for="Horas Diarias">Horas Diarias</label>
+            <input type="number" class="input-group" [(ngModel)]="DiasHora" (ngModelChange)="horasPorDia()">
+        </div>
+
+        <div class="col-xs-6 col-sm-3">
+            <label for="Horas Diarias">Dias trabalhados</label>
+            <input type="number" class="input-group" [(ngModel)]="DiasTrab" (ngModelChange)="DiasTrabalhados()">
+        </div>
+
+        <div class="col-xs-6 col-sm-3">
+            <label for="Horas Diarias">Salario</label>
+            <input type="number" class="input-group" [(ngModel)]="Salario" (ngModelChange)="salario()">
+        </div>
+
+        <button class="btn btn-outline-primary mt-2 w-100" (click)="Calculo()">Calculo</button>
+    </div>
+
+    <div class=" text-center">
+        <p>{{resultado}}</p>
+    </div>
+
+</div>
