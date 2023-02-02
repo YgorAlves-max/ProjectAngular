@@ -3,20 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TelaInicialComponent } from './tela-inicial/tela-inicial.component';
 import { FormsModule } from '@angular/forms';
+import { MyComponentComponent } from './my-component/my-component.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TelaInicialComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
+  declarations: [AppComponent, MyComponentComponent],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
